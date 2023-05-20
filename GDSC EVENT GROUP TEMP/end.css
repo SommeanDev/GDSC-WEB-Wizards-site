@@ -1,0 +1,74 @@
+.end{
+    color: white;
+    background-color: #031831;
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 5%;
+}
+
+.end .categories{
+    display: flex;
+    gap: 170px;
+}
+
+.end .categories .c1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.end .categories .c2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.end .categories .c3{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.end .categories .c4{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.end .categories .c1_title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 37.57px;
+}
+
+.end .categories .c1_body{
+    max-width: 400px;
+    font-size: 24;
+    line-height: 28.18px;
+}
+
+.end .categories .c2_title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 37.57px;
+}
+
+.end .categories .c3_title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 37.57px;
+}
+
+.end .categories .c4_title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 37.57px;
+}
+
+.end .c2_body, .end .c3_body, .end .c4_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}

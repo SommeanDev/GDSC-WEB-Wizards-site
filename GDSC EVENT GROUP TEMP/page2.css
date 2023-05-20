@@ -1,0 +1,185 @@
+.page2{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    font-size: 400;
+    background-color: #020f1f;
+    color: white;
+    padding: 0 2%;
+}
+
+.page2 .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    font-family: 'Lavishly Yours', cursive;
+    font-size: 96px;
+}
+
+.page2 .title .title-txt{
+    padding: 0% 40%;
+    border: 1px solid #251148;
+    box-shadow: 0px 10px 70px black;
+    text-shadow:3px 5px 5px #60395d;
+}
+
+.page2 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 0%;
+    gap: 50px;
+    margin: 0% 9%;
+}
+
+.page2 .content .m1, .page2 .content .m2{
+    display: flex;
+    align-items: center;
+    padding: 0px 5%;
+    gap: 5%;
+    text-align: left;
+}
+
+.page2 .content .m1 .name, .page2 .content .m2 .name{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 48px;
+}
+
+.page2 .content .links{
+    width: 293px;
+    height: 39.16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page2 .content .links .icon{
+    scale: 100%;
+}
+
+
+.page2 .content .links .icon:hover{
+    cursor: pointer;
+    animation: rot_icon 1s ease-in-out 20ms;
+}
+
+@keyframes rot_icon {
+    from{
+        scale: 100%;
+        transform: rotate(0deg);
+    }
+    25%{
+        scale: 110%;
+        transform: rotate(-22.5deg);
+    }
+    50%{
+        scale: 120%;
+        transform: rotate(20deg);
+    }
+    75%{
+        transform: rotate(-11.25deg);
+    }
+    to{
+        scale: 100%;
+        transform: rotate(0deg);
+    }
+}
+
+.page2 .content .card1:hover .a_bar,
+.page2 .content .card2:hover .a_bar{
+    width: 5rem;
+    height: 0.5rem;
+    border: 1px white;
+    background-color: white;
+    animation: slideInL 500ms ease-in-out 0ms;
+}
+
+
+.page2 .content .card1 .a_bar,
+.page2 .content .card2 .a_bar{
+    width: 5rem;
+    height: 0.5rem;
+    border: 1px white;
+    background-color: #020f1f;
+    animation: slideOutL 500ms ease-in-out 0ms;
+}
+
+.page2 .content .card1:hover .b_bar,
+.page2 .content .card2:hover .b_bar{
+    width: 5rem;
+    height: 0.5rem;
+    border: 1px white;
+    background-color: white;
+    animation: slideInL 500ms ease-in-out 0ms;
+}
+
+
+.page2 .content .card1 .b_bar,
+.page2 .content .card2 .b_bar{
+    width: 5rem;
+    height: 0.5rem;
+    border: 1px white;
+    background-color: #020f1f;
+    animation: slideOutL 500ms ease-in-out 0ms;
+}
+
+@keyframes slideInL{
+    from{
+        margin-left: -10%;
+        background-color: #020f1f;
+        transform: scaleX(0%);
+    }
+    to{
+        background-color: white;
+        margin-left: 0%;
+        transform: scaleX(100%);
+    }
+}
+
+@keyframes slideOutL{
+    from{
+        background-color: white;
+        margin-left: 0%;
+        transform: scaleX(100%);
+    }
+    to{
+        margin-left: -10%;
+        background-color: #020f1f;
+        transform: scaleX(0%);
+    }
+}
+
+.page2 .content .card1, .page2 .content .card2{
+    width: fit-content;
+    padding: 5% 2%;
+    border-bottom: 0.2rem solid #251148;
+    /*box-shadow: 5px 10px 50px #191148;*/
+    transition: 250ms ease-in-out 0ms;
+}
+
+.page2 .content .card1{
+    border-left: 0.2rem solid #251148;
+}
+
+.page2 .content .card2{
+    border-right: 0.2rem solid #251148;
+}
+
+.page2 .content .card1:hover{
+    scale: 110%;
+    /*border: 1px solid white;*/
+    box-shadow: -30px 50px 100px #191148;
+}
+
+.page2 .content .card2:hover{
+    scale: 110%;
+    /*border: 1px solid white;*/
+    box-shadow: 30px 50px 100px #191148;
+}
+
+/*.page2 .content .card1:hover .content .profile,
+.page2 .content .card2:hover .content .profile{
+    display: inline-block;
+    border-right: 5px solid orange;
+    border-bottom: 5px solid orange;
+}*/

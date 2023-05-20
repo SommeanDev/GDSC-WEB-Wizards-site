@@ -1,0 +1,151 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*@keyframes fadeR {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(center);
+    }
+}*/
+
+body{
+    background-color: #020f1f;
+}
+
+.bg-container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(./assets/Rectangle\ 1.svg),url(./assets/cloud-neon-color-with-girl-design-illustration\ 1.svg);
+    background-size: cover;
+    color: white;
+    padding: 15px;
+}
+
+.padd2{
+    padding: 5%;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 59px;
+    gap: 686px;
+}
+
+.navbar .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 126px;
+    width: 458px;
+    height: 28px;
+    font-family: 'Italiana', serif;
+}
+
+.navbar .title{
+    font-family: 'Lavishly Yours', cursive;
+    font-size: 32px;
+    text-align: center;
+    transition: 0.5s;
+    background-color: transparent;
+    text-shadow: 2px 3px 50px rgb(248, 255, 194);
+}
+
+.navbar .content .c1{
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    text-shadow: 2px 5px 10px rgb(248, 255, 194);
+    transition: 390ms;
+}
+
+.navbar .content .c1:hover, .navbar .title:hover{
+    scale: 110%;
+    text-shadow: 5px 10px 50px rgb(0, 0, 0);
+    box-shadow:5px 10px 50px #031831;
+    cursor: pointer;
+}
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15%;
+}
+
+.landing .side-txt{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.landing .side-txt .txt-content{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.landing .row2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.landing .row2 .landing-txt{
+    max-width: 810px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.landing .padd{
+    padding: 2% 30%;
+}
+
+.landing-txt .title{
+    font-family: 'Lavishly Yours', cursive;
+    font-size: 96px;
+}
+
+.landing .line{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.credits{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    height: 15em;
+    color: white;
+    background-color: #03142a;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.credits .logo{
+    scale: 20%;
+}
